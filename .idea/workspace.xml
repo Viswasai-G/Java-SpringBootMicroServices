@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Intial Commit: push file via upload" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/myCarRentalAlerts">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/temp">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../myCarRentalAlerts">
+      <ProjectState />
+    </projectState>
+    <projectState path="E:/mySmall-microServiceApp/myCarRentalAlerts">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/../myCarRentalAlerts">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/temp">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1hJ9eivB18LQN3maZQY7Y5LBplb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices" />
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myCarRentalAlerts" />
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\temp" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle --dry-run" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MyCarRentalsApplication">
+    <configuration name="MyCarRentalAlerts" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentalAlerts.MyCarRentalAlertsApplication" />
+      <module name="myCarRentalAlerts.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCarRentalsApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentals.MyCarRentalsApplication" />
+      <module name="myCarRentals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mySmallCompany.myCarRentals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyRentals" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myRentals.MyRentalsApplication" />
+      <module name="myRentals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mySmallCompany.myRentals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/myRentalUsers" />
+      <option name="docBase" value="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myRentalUsers\src" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8085" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat 9.0.37" />
+          <option name="number" value="0" />
+          <option name="path" value="C:\Apache\apache-tomcat-9.0.37" />
+          <option name="version" value="9.0.37.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myRentalUsers" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" singleton="false">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/myRentalUsers" />
+      <option name="docBase" value="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myRentalUsers\src\main\java\com\mySmallCompany\myRentalUsers" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8082" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat 9.0.37" />
+          <option name="number" value="0" />
+          <option name="path" value="C:\Apache\apache-tomcat-9.0.37" />
+          <option name="version" value="9.0.37.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MyRentals" />
+      <item itemvalue="Application.MyCarRentalAlerts" />
+      <item itemvalue="Application.MyCarRentalsApplication" />
+      <item itemvalue="Smart Tomcat.myRentalUsers" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyCarRentalsApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="" />
+      <created>1599718427884</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599718427884</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../myCarRentals" />
+      <path value="$PROJECT_DIR$/myCarRentals" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Intial Commit: push file via upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intial Commit: push file via upload" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1599722187967">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1599722187967" />
+    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599727708350">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599727708350" />
+    <state x="725" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599723550351">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="725" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599723550351" />
+    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599727614676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599727614676" />
+    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1599729752896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599729752896" />
+    <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599728641524">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599728641524" />
+    <state x="593" y="333" key="Github.CreateGistDialog" timestamp="1599728088808">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="593" y="333" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1599728088808" />
+    <state x="648" y="311" key="Github.ShareDialog" timestamp="1599729870292">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="648" y="311" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1599729870292" />
+    <state x="407" y="111" key="Github.UntrackedFilesDialog" timestamp="1599728872920">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599728872920" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1599728208763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1599728208763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1599728208763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1599728208763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
+    <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599724815079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="441" y="118" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1599724815079" />
+    <state x="250" y="0" key="SettingsEditor" timestamp="1599730293130">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599730293130" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599729757034">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599729757034" />
+    <state x="203" y="47" key="new project wizard" timestamp="1599727238855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="203" y="47" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599727238855" />
+    <state x="426" y="188" width="672" height="677" key="run.anything.popup" timestamp="1599725671684">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="188" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599725671684" />
+  </component>
+</project>

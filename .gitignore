@@ -1,0 +1,9 @@
+# Project exclude paths
+/Java-SpringbootMicroServices/myCarRentals/target/
+/myCarRentalAlerts/.gradle/
+/myCarRentalAlerts/build/
+/myCarRentalAlerts/build/classes/java/main/
+/myCarRentalAlerts/build/classes/java/test/
+/myCarRentals/target/
+/myRentals/target/
+/myRentalUsers/target/
