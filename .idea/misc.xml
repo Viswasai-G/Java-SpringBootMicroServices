@@ -93,6 +93,8 @@
         <option value="$PROJECT_DIR$/../myCarRentals/pom.xml" />
         <option value="$PROJECT_DIR$/../myRentals/pom.xml" />
         <option value="$PROJECT_DIR$/../myRentalUsers/pom.xml" />
+        <option value="$PROJECT_DIR$/../myCars/pom.xml" />
+        <option value="$PROJECT_DIR$/myCars/pom.xml" />
       </list>
     </option>
   </component>

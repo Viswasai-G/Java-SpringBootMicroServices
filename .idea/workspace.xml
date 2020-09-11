@@ -13,7 +13,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Intial Commit: push file via upload" />
+    <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Module: Car Inventory">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/myCarRentalAlerts.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Controller/MyCarsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Exception/CarNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Exception/NoCarAvailable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/MyCarsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Repo/MyCarsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCars/src/test/java/com/mySmallCompany/myCars/MyCarsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myRentalUsers/myRentalUsers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,13 +80,21 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -68,7 +102,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1hJ9eivB18LQN3maZQY7Y5LBplb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -77,20 +113,21 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myCars/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices" />
-      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myCarRentalAlerts" />
       <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\temp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices" />
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -98,7 +135,7 @@
       <command value="gradle --dry-run" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyCarRentalsApplication">
+  <component name="RunManager" selected="Application.MyCars">
     <configuration name="MyCarRentalAlerts" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentalAlerts.MyCarRentalAlertsApplication" />
       <module name="myCarRentalAlerts.main" />
@@ -115,6 +152,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCars" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCars.MyCarsApplication" />
+      <module name="myCars" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,6 +219,7 @@
     <list>
       <item itemvalue="Application.MyRentals" />
       <item itemvalue="Application.MyCarRentalAlerts" />
+      <item itemvalue="Application.MyCars" />
       <item itemvalue="Application.MyCarRentalsApplication" />
       <item itemvalue="Smart Tomcat.myRentalUsers" />
     </list>
@@ -214,77 +259,82 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Intial Commit: push file via upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intial Commit: push file via upload" />
+    <MESSAGE value="Module: Car Inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Module: Car Inventory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1599722187967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1599722187967" />
-    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599727708350">
+    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599781651695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599727708350" />
+    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781651695" />
+    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1599779413341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599779413341" />
     <state x="725" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599723550351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="725" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599723550351" />
-    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599727614676">
+    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599781625322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599727614676" />
-    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1599729752896">
+    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781625322" />
+    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1599784781126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599729752896" />
-    <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599728641524">
+    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599784781126" />
+    <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599781987702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599728641524" />
+    <state x="550" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599781987702" />
     <state x="593" y="333" key="Github.CreateGistDialog" timestamp="1599728088808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="593" y="333" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1599728088808" />
-    <state x="648" y="311" key="Github.ShareDialog" timestamp="1599729870292">
+    <state x="648" y="311" key="Github.ShareDialog" timestamp="1599730327005">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="648" y="311" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1599729870292" />
-    <state x="407" y="111" key="Github.UntrackedFilesDialog" timestamp="1599728872920">
+    <state x="648" y="311" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730327005" />
+    <state x="407" y="111" key="Github.UntrackedFilesDialog" timestamp="1599730572592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599728872920" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1599728208763">
+    <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730572592" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1599784575206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1599728208763">
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599784575206" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1599784575205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1599728208763">
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599784575205" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1599784575205">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1599728208763">
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599784575205" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1599784575206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599728208763" />
-    <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599724815079">
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599784575206" />
+    <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599777530206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="441" y="118" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1599724815079" />
-    <state x="250" y="0" key="SettingsEditor" timestamp="1599730293130">
+    <state x="441" y="118" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1599777530206" />
+    <state x="250" y="0" key="SettingsEditor" timestamp="1599781976060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599730293130" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599729757034">
+    <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599781976060" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599784601131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599729757034" />
-    <state x="203" y="47" key="new project wizard" timestamp="1599727238855">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599784601131" />
+    <state x="203" y="47" key="new project wizard" timestamp="1599781970712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="203" y="47" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599727238855" />
+    <state x="203" y="47" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599781970712" />
     <state x="426" y="188" width="672" height="677" key="run.anything.popup" timestamp="1599725671684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

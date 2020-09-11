@@ -10,6 +10,15 @@
         </processorPath>
         <module name="myCarRentalAlerts.main" />
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myCarRentals" />
+        <module name="myCars" />
+        <module name="myRentals" />
+        <module name="myRentalUsers" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.mySmallCompany.myCarRentalAlerts.main" target="11" />
@@ -23,6 +32,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="myCarRentals" options="-parameters" />
+      <module name="myCars" options="-parameters" />
       <module name="myIceAndFire" options="-parameters" />
       <module name="myRentals" options="-parameters" />
     </option>
