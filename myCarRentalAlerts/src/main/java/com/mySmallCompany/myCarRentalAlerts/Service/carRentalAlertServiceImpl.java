@@ -6,6 +6,7 @@ import com.mySmallCompany.myCarRentalAlerts.Model.Issue;
 import com.mySmallCompany.myCarRentalAlerts.Model.carRentalAlert;
 import com.mySmallCompany.myCarRentalAlerts.Repo.carRentalAlertRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.aws.messaging.listener.annotation.SqsListener;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -41,8 +42,30 @@ public class carRentalAlertServiceImpl implements carRentalAlertService {
         return carRentalAlertRepo.findById(id);
     }
 
+    /**Default implementation. Will add a notification iff it has not been reported yet.
+     * Will trigger the below function through the controller.
+     * */
     @Override
     public void addNotification(carRentalAlert carNotificationAlert) {
+        List<carRentalAlert> alreadyPresent =
+                carRentalAlertRepo.findAll()
+                        .stream()
+                        .filter(notif -> notif.getIssue()==carNotificationAlert.getIssue())
+                        .filter(notif -> notif.getVin().equals(carNotificationAlert.getVin()))
+                        .collect(Collectors.toList());
+
+        if(alreadyPresent.isEmpty()){
+            carRentalAlertRepo.save(carNotificationAlert);
+        }
+    }
+
+    /**SQS implementation.
+     * Will trigger the below function whenever there is an object present in SQS.
+     * */
+    @SqsListener(value = "MyCarAlertsQueue")
+    public void addNotificationFromSQS(Car car){
+        //Adding issue as low fuel to differentiate messages coming from SQS.
+        carRentalAlert carNotificationAlert = new carRentalAlert(car.getVin(), Issue.LOW_FUEL);
         List<carRentalAlert> alreadyPresent =
                 carRentalAlertRepo.findAll()
                         .stream()

@@ -14,31 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Module: Car Inventory">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/myCarRentalAlerts.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Controller/MyCarsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Exception/CarNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Exception/NoCarAvailable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/MyCarsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Repo/MyCarsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/test/java/com/mySmallCompany/myCars/MyCarsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myRentalUsers/myRentalUsers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myRentals/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +78,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -135,10 +119,11 @@
       <command value="gradle --dry-run" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyCars">
+  <component name="RunManager" selected="Application.MyCarRentalsApplication">
     <configuration name="MyCarRentalAlerts" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentalAlerts.MyCarRentalAlertsApplication" />
       <module name="myCarRentalAlerts.main" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +131,7 @@
     <configuration name="MyCarRentalsApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentals.MyCarRentalsApplication" />
       <module name="myCarRentals" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mySmallCompany.myCarRentals.*" />
@@ -238,6 +224,21 @@
       <option name="presentableId" value="Default" />
       <updated>1599718427884</updated>
     </task>
+    <task id="LOCAL-00001" summary="Module: Car Inventory">
+      <created>1599784824191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599784824191</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update: Local Database to Amazon RDS instance">
+      <created>1599890340855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599890340855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,17 +261,22 @@
     </ignored-roots>
     <MESSAGE value="Intial Commit: push file via upload" />
     <MESSAGE value="Module: Car Inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Module: Car Inventory" />
+    <MESSAGE value="Update: Local Database to Amazon RDS instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Local Database to Amazon RDS instance" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1599722187967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1599722187967" />
-    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599781651695">
+    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599975410859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="450" y="0" width="1086" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781651695" />
+    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599975410859" />
+    <state x="0" y="236" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599974622126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="236" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1599974622126" />
     <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1599779413341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -283,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781625322" />
-    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1599784781126">
+    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1599890338821">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599784781126" />
+    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599890338821" />
     <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599781987702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -303,22 +309,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730572592" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1599784575206">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1599975427493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599784575206" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1599784575205">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
+    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1599975427493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599784575205" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1599784575205">
+    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
+    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1599975427493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599784575205" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1599784575206">
+    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1599975427493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599784575206" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
     <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599777530206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -327,17 +333,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599781976060" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599784601131">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599890345214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599784601131" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599890345214" />
     <state x="203" y="47" key="new project wizard" timestamp="1599781970712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="203" y="47" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599781970712" />
-    <state x="426" y="188" width="672" height="677" key="run.anything.popup" timestamp="1599725671684">
+    <state x="426" y="188" width="672" height="677" key="run.anything.popup" timestamp="1599804407001">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="426" y="188" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599725671684" />
+    <state x="426" y="188" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599804407001" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599900202758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599900202758" />
   </component>
 </project>

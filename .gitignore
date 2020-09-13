@@ -7,3 +7,5 @@
 /myCarRentals/target/
 /myRentals/target/
 /myRentalUsers/target/
+/myCarRentals/src/main/resources/application-dev.properties
+/myCarRentalAlerts/src/main/resources/application-dev.properties

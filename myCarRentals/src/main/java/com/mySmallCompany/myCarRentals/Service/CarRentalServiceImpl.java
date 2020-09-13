@@ -1,12 +1,14 @@
 package com.mySmallCompany.myCarRentals.Service;
 
 
+import com.mySmallCompany.myCarRentals.AWS.MyCarSqsSender;
 import com.mySmallCompany.myCarRentals.Exception.CarNotFoundException;
 import com.mySmallCompany.myCarRentals.Exception.CarNotificationAlertException;
 import com.mySmallCompany.myCarRentals.Model.Car;
 import com.mySmallCompany.myCarRentals.Model.Tires;
 import com.mySmallCompany.myCarRentals.Repo.CarRentalRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -17,6 +19,9 @@ import java.util.Optional;
 
 @Service
 public class CarRentalServiceImpl implements CarRentalService {
+
+    @Autowired
+    private MyCarSqsSender myCarSqsSender;
 
     @Autowired
     private CarRentalRepo carRentalRepo;
@@ -47,8 +52,20 @@ public class CarRentalServiceImpl implements CarRentalService {
                 restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, Car.class);
             }
             if(car.getSpeed()>70){
-                restTemplate.postForObject("http://localhost:8081/addNotification/HIGH_SPEED", car, Car.class);
+                /**
+                Send Car object to SQS queue
+                The notification sent contains only the car object but does not contain the Issue.
+                When polling messages from the queue, RentalAlerts sets the issue to LOW_FUEL.
+
+                 TO-DO: Send a alert object rather than car object
+                */
+                myCarSqsSender.send(car);
+//                restTemplate.postForObject("http://localhost:8081/addNotification/HIGH_SPEED", car, Car.class);
             }
+            if(car.getFuelVolume()<3){
+                sendNotifToSQS(car);
+            }
+
         } catch (RestClientException e) {
             throw new CarNotificationAlertException("Failed to post notification to Notification alert service:"+e.getMessage());
         }
@@ -57,6 +74,13 @@ public class CarRentalServiceImpl implements CarRentalService {
             carRentalRepo.save(car);
         }
 
+    }
+
+    //Not a good practice.
+    //Will send car object to SQS without autowiring and creating a QueueMessagingTemplate bean.
+    @SendTo(value = "MyCarAlertsQueue")
+    public Car sendNotifToSQS(Car car){
+        return car;
     }
 
     @Override
