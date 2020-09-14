@@ -13,16 +13,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Module: Car Inventory">
+    <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Update: Use separate IAM access cred for SQS and RDS">
       <change afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/awsRDSconfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599890340855</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update: SQS integration for Async communication">
+      <created>1599975743085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599975743085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,17 +265,18 @@
     <MESSAGE value="Intial Commit: push file via upload" />
     <MESSAGE value="Module: Car Inventory" />
     <MESSAGE value="Update: Local Database to Amazon RDS instance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Local Database to Amazon RDS instance" />
+    <MESSAGE value="Update: SQS integration for Async communication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: SQS integration for Async communication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1599722187967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1599722187967" />
-    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599975410859">
+    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599976061457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599975410859" />
+    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599976061457" />
     <state x="0" y="236" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599974622126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -289,10 +293,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781625322" />
-    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1599890338821">
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599990642454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599890338821" />
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599990642454" />
+    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1600063793704">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600063793704" />
     <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599781987702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -309,22 +317,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730572592" />
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1599975427493">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1600063823402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
-    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1599975427493">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600063823402" />
+    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1600063823386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
-    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1599975427493">
+    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600063823386" />
+    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1600063823386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
-    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1599975427493">
+    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600063823386" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1600063823402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599975427493" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600063823402" />
     <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599777530206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -333,10 +341,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599781976060" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599890345214">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599975755744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599890345214" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599975755744" />
     <state x="203" y="47" key="new project wizard" timestamp="1599781970712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
