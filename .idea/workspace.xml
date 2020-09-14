@@ -14,11 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Update: Use separate IAM access cred for SQS and RDS">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/AWS/MyCarAlertsSqsConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/awsRDSconfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +116,7 @@
       <command value="gradle --dry-run" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyCarRentalsApplication">
+  <component name="RunManager" selected="Application.MyCarRentals">
     <configuration name="MyCarRentalAlerts" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentalAlerts.MyCarRentalAlertsApplication" />
       <module name="myCarRentalAlerts.main" />
@@ -124,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyCarRentalsApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="MyCarRentals" type="Application" factoryName="Application" singleton="false" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentals.MyCarRentalsApplication" />
       <module name="myCarRentals" />
       <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
@@ -202,12 +203,12 @@
       <item itemvalue="Application.MyRentals" />
       <item itemvalue="Application.MyCarRentalAlerts" />
       <item itemvalue="Application.MyCars" />
-      <item itemvalue="Application.MyCarRentalsApplication" />
+      <item itemvalue="Application.MyCarRentals" />
       <item itemvalue="Smart Tomcat.myRentalUsers" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyCarRentalsApplication" />
+        <item itemvalue="Application.MyCarRentals" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599975743085</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: Use separate IAM access cred for SQS and RDS">
+      <created>1600063949595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600063949595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,17 +274,18 @@
     <MESSAGE value="Module: Car Inventory" />
     <MESSAGE value="Update: Local Database to Amazon RDS instance" />
     <MESSAGE value="Update: SQS integration for Async communication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: SQS integration for Async communication" />
+    <MESSAGE value="Update: Use separate IAM access cred for SQS and RDS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Use separate IAM access cred for SQS and RDS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1599722187967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1599722187967" />
-    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599976061457">
+    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600064827587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599976061457" />
+    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600064827587" />
     <state x="0" y="236" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599974622126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,10 +306,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599990642454" />
-    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1600063793704">
+    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1600063946729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600063793704" />
+    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600063946729" />
     <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599781987702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -317,22 +326,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730572592" />
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1600063823402">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1600067425676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600063823402" />
-    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1600063823386">
+    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600067425676" />
+    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1600067425673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600063823386" />
-    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1600063823386">
+    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600067425673" />
+    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1600067425671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600063823386" />
-    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1600063823402">
+    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600067425671" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1600067425675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600063823402" />
+    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600067425675" />
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1600066222250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600066222250" />
+    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1600066222248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600066222248" />
+    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1600066222248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600066222248" />
+    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1600066222249">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600066222249" />
     <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599777530206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -341,21 +366,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599781976060" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1599975755744">
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1600063956063">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599975755744" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600063956063" />
     <state x="203" y="47" key="new project wizard" timestamp="1599781970712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="203" y="47" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599781970712" />
-    <state x="426" y="188" width="672" height="677" key="run.anything.popup" timestamp="1599804407001">
+    <state x="426" y="188" width="672" height="677" key="run.anything.popup" timestamp="1600064650777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="426" y="188" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599804407001" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599900202758">
+    <state x="426" y="188" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600064650777" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600064652486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599900202758" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600064652486" />
   </component>
 </project>

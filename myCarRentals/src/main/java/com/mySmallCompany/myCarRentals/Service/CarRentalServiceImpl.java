@@ -63,7 +63,7 @@ public class CarRentalServiceImpl implements CarRentalService {
 //                restTemplate.postForObject("http://localhost:8081/addNotification/HIGH_SPEED", car, Car.class);
             }
             if(car.getFuelVolume()<3){
-                sendNotifToSQS(car);
+                myCarSqsSender.send(car);
             }
 
         } catch (RestClientException e) {
@@ -76,12 +76,7 @@ public class CarRentalServiceImpl implements CarRentalService {
 
     }
 
-    //Not a good practice.
-    //Will send car object to SQS without autowiring and creating a QueueMessagingTemplate bean.
-    @SendTo(value = "MyCarAlertsQueue")
-    public Car sendNotifToSQS(Car car){
-        return car;
-    }
+
 
     @Override
     public List<Double> getCarLocation(String vin) {
