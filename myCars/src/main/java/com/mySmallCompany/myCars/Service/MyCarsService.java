@@ -1,21 +1,21 @@
 package com.mySmallCompany.myCars.Service;
 
-import com.mySmallCompany.myCars.Model.Car;
+import com.mySmallCompany.myCars.Model.CarMakeModel;
 
 import java.util.List;
 
 public interface MyCarsService {
 
-    Car getFirstAvailableCar();
+    CarMakeModel getFirstAvailableCar();
 
-    List<Car> getInventory();
+    List<CarMakeModel> getInventory();
 
-    Car getCar(String vin);
+    CarMakeModel getCar(String vin);
 
-    Car AddCarToInventory(Car car);
+    CarMakeModel AddCarToInventory(CarMakeModel car);
 
     void removeCarFromInventory(String vin);
 
-    List<Car> getAllCarsInUse();
+    List<CarMakeModel> getAllCarsInUse();
 
 }

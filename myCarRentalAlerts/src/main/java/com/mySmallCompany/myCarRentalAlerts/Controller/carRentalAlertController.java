@@ -1,8 +1,8 @@
 package com.mySmallCompany.myCarRentalAlerts.Controller;
 
-import com.mySmallCompany.myCarRentalAlerts.Model.Car;
+import com.mySmallCompany.myCarRentalAlerts.Model.CarReading;
 import com.mySmallCompany.myCarRentalAlerts.Model.Issue;
-import com.mySmallCompany.myCarRentalAlerts.Model.carRentalAlert;
+import com.mySmallCompany.myCarRentalAlerts.Model.CarRentalAlert;
 import com.mySmallCompany.myCarRentalAlerts.Service.carRentalAlertService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +18,7 @@ public class carRentalAlertController {
 
 
     @GetMapping(value = "/getAllNotif")
-    List<carRentalAlert> getAllNotifications(){
+    List<CarRentalAlert> getAllNotifications(){
         return carRentalAlertService.getAllNotifications();
     }
 
@@ -28,8 +28,8 @@ public class carRentalAlertController {
     }
 
     @PostMapping(value = "/addNotification/{issue}")
-    void addNotification(@RequestBody Car car, @PathVariable(value = "issue") Issue issue){
-        carRentalAlertService.addNotification(new carRentalAlert(car.getVin(), issue));
+    void addNotification(@RequestBody CarReading carReading, @PathVariable(value = "issue") Issue issue){
+        carRentalAlertService.addNotification(new CarRentalAlert(carReading.getVin(), issue));
     }
 
     @GetMapping(value = "/getIssue/{issue}")
@@ -43,7 +43,7 @@ public class carRentalAlertController {
     }
 
     @GetMapping(value = "/getCarDetails/{vin}")
-    Car getCarDetails(@PathVariable String vin){
+    CarReading getCarDetails(@PathVariable String vin){
         return carRentalAlertService.getCarDetails(vin);
     }
 

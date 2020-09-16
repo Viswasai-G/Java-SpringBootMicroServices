@@ -4,11 +4,11 @@ package com.mySmallCompany.myCarRentals.Service;
 import com.mySmallCompany.myCarRentals.AWS.MyCarSqsSender;
 import com.mySmallCompany.myCarRentals.Exception.CarNotFoundException;
 import com.mySmallCompany.myCarRentals.Exception.CarNotificationAlertException;
-import com.mySmallCompany.myCarRentals.Model.Car;
-import com.mySmallCompany.myCarRentals.Model.Tires;
+import com.mySmallCompany.myCarRentals.Model.CarMakeModel;
+import com.mySmallCompany.myCarRentals.Model.CarReading;
+import com.mySmallCompany.myCarRentals.Model.TireReading;
 import com.mySmallCompany.myCarRentals.Repo.CarRentalRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -30,13 +30,13 @@ public class CarRentalServiceImpl implements CarRentalService {
     private RestTemplate restTemplate;
 
     @Override
-    public List<Car> getAllCars() {
-        return (List<Car>) carRentalRepo.findAll();
+    public List<CarReading> getAllCars() {
+        return (List<CarReading>) carRentalRepo.findAll();
     }
 
     @Override
-    public Car getCar(String vin) {
-        Optional<Car> carOptional = carRentalRepo.findById(vin);
+    public CarReading getCar(String vin) {
+        Optional<CarReading> carOptional = carRentalRepo.findById(vin);
         if(carOptional.isPresent()){
             return carOptional.get();
         }
@@ -46,10 +46,17 @@ public class CarRentalServiceImpl implements CarRentalService {
     }
 
     @Override
-    public void addNewCar(Car car) {
+    public void addNewCar(CarReading car) {
         try{
             if(car.isCheckEngineLightOn()){
-                restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, Car.class);
+                /**Lets say we only want to send an alert if the make of the model is not Honda
+                 * TO-DO: Make call async
+                 * Use CompletableFuture<CarMakeModel> and apply condition async*/
+                if(!restTemplate.getForEntity("http://localhost:8085/getCar/"+car.getVin(), CarMakeModel.class)
+                        .getBody()
+                        .getVin().equalsIgnoreCase("honda")){
+                    restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, CarReading.class);
+                }
             }
             if(car.getSpeed()>70){
                 /**
@@ -80,7 +87,7 @@ public class CarRentalServiceImpl implements CarRentalService {
 
     @Override
     public List<Double> getCarLocation(String vin) {
-        Optional<Car> carOptional = carRentalRepo.findById(vin);
+        Optional<CarReading> carOptional = carRentalRepo.findById(vin);
         if(!carOptional.isPresent()){
             throw new CarNotFoundException("Car not found!");
         }
@@ -91,7 +98,7 @@ public class CarRentalServiceImpl implements CarRentalService {
 
     @Override
     public boolean carNeedsService(String vin) {
-        Optional<Car> carOptional = carRentalRepo.findById(vin);
+        Optional<CarReading> carOptional = carRentalRepo.findById(vin);
         if(!carOptional.isPresent()){
             throw new CarNotFoundException("Car not found!");
         }
@@ -99,8 +106,8 @@ public class CarRentalServiceImpl implements CarRentalService {
     }
 
     @Override
-    public Tires getTirePressures(String vin) {
-        Optional<Car> carOptional = carRentalRepo.findById(vin);
+    public TireReading getTirePressures(String vin) {
+        Optional<CarReading> carOptional = carRentalRepo.findById(vin);
         if(!carOptional.isPresent()){
             throw new CarNotFoundException("Car not found!");
         }

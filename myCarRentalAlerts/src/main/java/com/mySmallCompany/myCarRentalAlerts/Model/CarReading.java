@@ -1,21 +1,12 @@
-package com.mySmallCompany.myCarRentals.Model;
+package com.mySmallCompany.myCarRentalAlerts.Model;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import java.sql.Timestamp;
 
-
-@Entity
 @Data
-@NoArgsConstructor
-public class Car {
+public class CarReading {
 
-    @Id
     private String vin;
     private double latitude;
     private double longitude;
@@ -28,6 +19,6 @@ public class Car {
     private boolean cruiseControlOn;
     private int engineRpm;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    Tires tires;
+    TireReading tires;
+
 }

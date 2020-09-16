@@ -1,7 +1,7 @@
 package com.mySmallCompany.myRentals.Service;
 
 import com.mySmallCompany.myRentals.Exception.RentalNotFoundException;
-import com.mySmallCompany.myRentals.Model.Car;
+import com.mySmallCompany.myRentals.Model.CarReading;
 import com.mySmallCompany.myRentals.Model.Rental;
 import com.mySmallCompany.myRentals.Model.User;
 import com.mySmallCompany.myRentals.Repo.MyRentalRepo;
@@ -40,7 +40,7 @@ public class MyRentalServiceImpl implements MyRentalService {
     }
 
     @Override
-    public Car getCarDetails(String id) {
+    public CarReading getCarDetails(String id) {
         Optional<Rental> rental = myRentalRepo.findById(id);
         if(rental.isPresent()){
             return rental.get().getCar();

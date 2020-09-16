@@ -13,7 +13,7 @@ import java.time.Year;
 
 @Entity
 @Data
-public class Car {
+public class CarMakeModel {
 
     @Id
     private String vin;
@@ -25,7 +25,7 @@ public class Car {
     private Timestamp lastServiceDate;
     private boolean inUse;
 
-    public Car(){
+    public CarMakeModel(){
         this.inUse = false;
     }
 

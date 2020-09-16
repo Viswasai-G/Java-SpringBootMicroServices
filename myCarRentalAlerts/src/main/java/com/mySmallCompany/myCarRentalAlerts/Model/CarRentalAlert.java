@@ -10,7 +10,7 @@ import java.util.UUID;
 @Entity
 @Data
 @NoArgsConstructor
-public class carRentalAlert {
+public class CarRentalAlert {
 
 
     @Id
@@ -18,7 +18,7 @@ public class carRentalAlert {
     private Issue issue;
     private String vin;
 
-    public carRentalAlert(String vin, Issue issue){
+    public CarRentalAlert(String vin, Issue issue){
         this.id = UUID.randomUUID().toString();
         this.vin = vin;
         this.issue = issue;

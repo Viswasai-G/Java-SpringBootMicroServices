@@ -13,7 +13,7 @@ public class Rental {
     @Id
     private String id;
     private User user;
-    private Car car;
+    private CarReading car;
 
     public Rental(){
         this.id = UUID.randomUUID().toString();

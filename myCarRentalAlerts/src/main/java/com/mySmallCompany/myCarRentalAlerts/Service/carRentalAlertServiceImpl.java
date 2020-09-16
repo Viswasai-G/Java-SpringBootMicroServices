@@ -1,9 +1,9 @@
 package com.mySmallCompany.myCarRentalAlerts.Service;
 
 
-import com.mySmallCompany.myCarRentalAlerts.Model.Car;
+import com.mySmallCompany.myCarRentalAlerts.Model.CarReading;
 import com.mySmallCompany.myCarRentalAlerts.Model.Issue;
-import com.mySmallCompany.myCarRentalAlerts.Model.carRentalAlert;
+import com.mySmallCompany.myCarRentalAlerts.Model.CarRentalAlert;
 import com.mySmallCompany.myCarRentalAlerts.Repo.carRentalAlertRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.aws.messaging.listener.annotation.SqsListener;
@@ -33,12 +33,12 @@ public class carRentalAlertServiceImpl implements carRentalAlertService {
 
 
     @Override
-    public List<carRentalAlert> getAllNotifications() {
+    public List<CarRentalAlert> getAllNotifications() {
         return carRentalAlertRepo.findAll();
     }
 
     @Override
-    public Optional<carRentalAlert> getNotification(String id) {
+    public Optional<CarRentalAlert> getNotification(String id) {
         return carRentalAlertRepo.findById(id);
     }
 
@@ -46,8 +46,8 @@ public class carRentalAlertServiceImpl implements carRentalAlertService {
      * Will trigger the below function through the controller.
      * */
     @Override
-    public void addNotification(carRentalAlert carNotificationAlert) {
-        List<carRentalAlert> alreadyPresent =
+    public void addNotification(CarRentalAlert carNotificationAlert) {
+        List<CarRentalAlert> alreadyPresent =
                 carRentalAlertRepo.findAll()
                         .stream()
                         .filter(notif -> notif.getIssue()==carNotificationAlert.getIssue())
@@ -63,10 +63,10 @@ public class carRentalAlertServiceImpl implements carRentalAlertService {
      * Will trigger the below function whenever there is an object present in SQS.
      * */
     @SqsListener(value = "MyCarAlertsQueue")
-    public void addNotificationFromSQS(Car car){
+    public void addNotificationFromSQS(CarReading carReading){
         //Adding issue as low fuel to differentiate messages coming from SQS.
-        carRentalAlert carNotificationAlert = new carRentalAlert(car.getVin(), Issue.LOW_FUEL);
-        List<carRentalAlert> alreadyPresent =
+        CarRentalAlert carNotificationAlert = new CarRentalAlert(carReading.getVin(), Issue.LOW_FUEL);
+        List<CarRentalAlert> alreadyPresent =
                 carRentalAlertRepo.findAll()
                         .stream()
                         .filter(notif -> notif.getIssue()==carNotificationAlert.getIssue())
@@ -87,7 +87,7 @@ public class carRentalAlertServiceImpl implements carRentalAlertService {
                 e.printStackTrace();
             }
         });
-        List<carRentalAlert> notifications = carRentalAlertRepo.findAll();
+        List<CarRentalAlert> notifications = carRentalAlertRepo.findAll();
         return notifications.stream()
                 .filter(notif -> notif.getIssue()== Issue.valueOf(issue))
                 .map(notif -> notif.getVin())
@@ -109,9 +109,9 @@ public class carRentalAlertServiceImpl implements carRentalAlertService {
     }
 
     @Override
-    public Car getCarDetails(String vin){
+    public CarReading getCarDetails(String vin){
 
-        ResponseEntity<Car> responseEntity = restTemplate.getForEntity("http://localhost:8080/getCar/"+vin, Car.class);
+        ResponseEntity<CarReading> responseEntity = restTemplate.getForEntity("http://localhost:8080/getCar/"+vin, CarReading.class);
         return responseEntity.getBody();
     }
 

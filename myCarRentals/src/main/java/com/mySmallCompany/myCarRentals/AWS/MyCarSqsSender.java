@@ -3,7 +3,7 @@ package com.mySmallCompany.myCarRentals.AWS;
 import com.amazonaws.auth.*;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.amazonaws.services.sqs.AmazonSQSAsyncClientBuilder;
-import com.mySmallCompany.myCarRentals.Model.Car;
+import com.mySmallCompany.myCarRentals.Model.CarReading;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.aws.messaging.core.QueueMessagingTemplate;
@@ -42,7 +42,7 @@ public class MyCarSqsSender {
         return amazonSQSAsyncClient;
     }
 
-    public void send(Car car){
+    public void send(CarReading car){
         this.queueMessagingTemplate
                 .convertAndSend("MyCarAlertsQueue", car);
     }

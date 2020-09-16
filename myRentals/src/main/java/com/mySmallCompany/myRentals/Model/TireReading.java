@@ -1,17 +1,14 @@
-package com.mySmallCompany.myCarRentalAlerts.Model;
+package com.mySmallCompany.myRentals.Model;
 
+import lombok.Getter;
+import lombok.Setter;
 
-import lombok.Data;
-
-@Data
-public class Tires {
-
-
+@Getter
+@Setter
+public class TireReading {
     private String id;
-
     private int frontLeft;
     private int frontRight;
     private int rearLeft;
     private int rearRight;
-
 }

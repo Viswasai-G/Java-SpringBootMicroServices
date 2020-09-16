@@ -1,6 +1,6 @@
 package com.mySmallCompany.myRentals.Service;
 
-import com.mySmallCompany.myRentals.Model.Car;
+import com.mySmallCompany.myRentals.Model.CarReading;
 import com.mySmallCompany.myRentals.Model.Rental;
 import com.mySmallCompany.myRentals.Model.User;
 
@@ -12,7 +12,7 @@ public interface MyRentalService {
 
     User getUserDetails(String id);
 
-    Car getCarDetails(String id);
+    CarReading getCarDetails(String id);
 
     List<Rental> getAllRentals();
 

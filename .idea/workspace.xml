@@ -4,23 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="Update: Basic Auth implementation">
-      <change afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Config/CSRF/CsrfTokenResponseHeaderBindingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/CarMakeModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCars/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCars/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Controller/carRentalAlertController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Controller/carRentalAlertController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/CarReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/Tires.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/TireReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/carRentalAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/CarRentalAlert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Repo/carRentalAlertRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Repo/carRentalAlertRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Service/carRentalAlertServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/AWS/MyCarSqsSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Controller/CarRentalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Controller/CarRentalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/CarReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/Tires.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/TireReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Repo/CarRentalRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Repo/CarRentalRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Controller/MyCarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Controller/MyCarsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Model/CarMakeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Repo/MyCarsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Repo/MyCarsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCars/src/main/java/com/mySmallCompany/myCars/Service/MyCarsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Controller/MyRentalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Controller/MyRentalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Model/CarReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Model/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Model/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Model/Tires.java" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Model/TireReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Service/MyRentalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Service/MyRentalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Service/MyRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myRentals/src/main/java/com/mySmallCompany/myRentals/Service/MyRentalServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,6 +327,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781625322" />
+    <state x="492" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600240647266">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="492" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1600240647266" />
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599990642454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -335,22 +355,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730572592" />
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom" timestamp="1600159131164">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1600238060538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600159131164" />
-    <state width="1493" height="311" key="GridCell.Tab.0.center" timestamp="1600159131163">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600238060538" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1600238060538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600159131163" />
-    <state width="1493" height="311" key="GridCell.Tab.0.left" timestamp="1600159131163">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600238060538" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1600238060538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600159131163" />
-    <state width="1493" height="311" key="GridCell.Tab.0.right" timestamp="1600159131164">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600238060538" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1600238060538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="311" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600159131164" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600238060538" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1600066222250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -379,10 +399,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600068079849" />
-    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600068208095">
+    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600238051813">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600068208095" />
+    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600238051813" />
     <state x="203" y="47" key="new project wizard" timestamp="1599781970712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

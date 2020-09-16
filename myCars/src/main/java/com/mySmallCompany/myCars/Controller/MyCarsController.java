@@ -1,6 +1,6 @@
 package com.mySmallCompany.myCars.Controller;
 
-import com.mySmallCompany.myCars.Model.Car;
+import com.mySmallCompany.myCars.Model.CarMakeModel;
 import com.mySmallCompany.myCars.Service.MyCarsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,22 +14,22 @@ public class MyCarsController {
     private MyCarsService myCarsService;
 
     @GetMapping(value = "/getFirstAvailable")
-    public Car getFirstAvailableCar(){
+    public CarMakeModel getFirstAvailableCar(){
         return myCarsService.getFirstAvailableCar();
     }
 
     @GetMapping(value = "/getInventory")
-    public List<Car> getInventory() {
+    public List<CarMakeModel> getInventory() {
         return myCarsService.getInventory();
     }
 
     @GetMapping(value = "/getCar/{vin}")
-    Car getCar(@PathVariable(value = "vin") String vin) {
+    CarMakeModel getCar(@PathVariable(value = "vin") String vin) {
         return myCarsService.getCar(vin);
     }
 
     @PostMapping(value = "/addCar")
-    public Car AddCarToInventory(@RequestBody Car car){
+    public CarMakeModel AddCarToInventory(@RequestBody CarMakeModel car){
         return myCarsService.AddCarToInventory(car);
     }
 
@@ -39,7 +39,7 @@ public class MyCarsController {
     }
 
     @GetMapping(value = "/getAllCarsInUse")
-    public List<Car> getAllCarsInUse() {
+    public List<CarMakeModel> getAllCarsInUse() {
         return myCarsService.getAllCarsInUse();
     }
 

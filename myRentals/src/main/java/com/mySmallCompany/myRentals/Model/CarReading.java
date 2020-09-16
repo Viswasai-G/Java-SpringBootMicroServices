@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 
 @Getter
 @Setter
-public class Car {
+public class CarReading {
 
     private String vin;
     private double latitude;
@@ -20,5 +20,5 @@ public class Car {
     private boolean engineCoolantLow;
     private boolean cruiseControlOn;
     private int engineRpm;
-    Tires tires;
+    TireReading tires;
 }

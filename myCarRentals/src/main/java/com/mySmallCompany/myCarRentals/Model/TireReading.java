@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @Data
 @Entity
-public class Tires {
+public class TireReading {
 
 
     @Id
@@ -19,7 +19,7 @@ public class Tires {
     private int rearLeft;
     private int rearRight;
 
-    public Tires(){
+    public TireReading(){
         this.id =
                 UUID.randomUUID().toString();
     }

@@ -1,7 +1,7 @@
 package com.mySmallCompany.myRentals.Controller;
 
 
-import com.mySmallCompany.myRentals.Model.Car;
+import com.mySmallCompany.myRentals.Model.CarReading;
 import com.mySmallCompany.myRentals.Model.Rental;
 import com.mySmallCompany.myRentals.Model.User;
 import com.mySmallCompany.myRentals.Service.MyRentalService;
@@ -27,7 +27,7 @@ public class MyRentalController {
     }
 
     @GetMapping(value = "/getCarDetails/{id}")
-    public Car getCarDetails(@PathVariable(value = "id") String id){
+    public CarReading getCarDetails(@PathVariable(value = "id") String id){
         return myRentalService.getCarDetails(id);
     }
 

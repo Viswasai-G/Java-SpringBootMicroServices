@@ -1,7 +1,7 @@
 package com.mySmallCompany.myCarRentals.Controller;
 
-import com.mySmallCompany.myCarRentals.Model.Car;
-import com.mySmallCompany.myCarRentals.Model.Tires;
+import com.mySmallCompany.myCarRentals.Model.CarReading;
+import com.mySmallCompany.myCarRentals.Model.TireReading;
 import com.mySmallCompany.myCarRentals.Service.CarRentalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,17 +15,17 @@ public class CarRentalController {
     CarRentalService carRentalService;
 
     @GetMapping(value = "/getAllCars")
-    public List<Car> getAllCars(){
+    public List<CarReading> getAllCars(){
         return carRentalService.getAllCars();
     }
 
     @GetMapping(value = "/getCar/{vin}")
-    public Car getCar(@PathVariable(value = "vin")String vin){
+    public CarReading getCar(@PathVariable(value = "vin")String vin){
         return carRentalService.getCar(vin);
     }
 
     @PostMapping(value = "/addCar")
-    public void addNewCar(@RequestBody Car car){
+    public void addNewCar(@RequestBody CarReading car){
         carRentalService.addNewCar(car);
     }
 
@@ -40,7 +40,7 @@ public class CarRentalController {
     }
 
     @GetMapping(value = "/getCar/getTires/{vin}")
-    public Tires getTirePressures(@PathVariable(value = "vin")String vin){
+    public TireReading getTirePressures(@PathVariable(value = "vin")String vin){
         return carRentalService.getTirePressures(vin);
     }
 
