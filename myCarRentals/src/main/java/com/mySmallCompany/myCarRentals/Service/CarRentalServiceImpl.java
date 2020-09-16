@@ -4,6 +4,7 @@ package com.mySmallCompany.myCarRentals.Service;
 import com.mySmallCompany.myCarRentals.AWS.MyCarSqsSender;
 import com.mySmallCompany.myCarRentals.Exception.CarNotFoundException;
 import com.mySmallCompany.myCarRentals.Exception.CarNotificationAlertException;
+import com.mySmallCompany.myCarRentals.Exception.MyCarsServiceException;
 import com.mySmallCompany.myCarRentals.Model.CarMakeModel;
 import com.mySmallCompany.myCarRentals.Model.CarReading;
 import com.mySmallCompany.myCarRentals.Model.TireReading;
@@ -16,6 +17,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -57,10 +59,16 @@ public class CarRentalServiceImpl implements CarRentalService {
                 /**Lets say we only want to send an alert if the make of the model is not Honda
                  * TO-DO: Make call async
                  * Use CompletableFuture<CarMakeModel> and apply condition async*/
-                if(!myCarsRestTemplate.getForEntity("http://localhost:8085/getCar/"+car.getVin(), CarMakeModel.class)
-                        .getBody()
-                        .getVin().equalsIgnoreCase("honda")){
-                    restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, CarReading.class);
+                try {
+                    String make = myCarsRestTemplate.getForEntity("http://localhost:8085/getCar/"+car.getVin(), CarMakeModel.class)
+                            .getBody()
+                            .getMake();
+                    if(make.equalsIgnoreCase("honda")){
+                        restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, CarReading.class);
+                    }
+                }
+                catch (Exception e){
+                    throw new MyCarsServiceException("Problem in getting carMakemodel!");
                 }
             }
             if(car.getSpeed()>70){
@@ -71,8 +79,8 @@ public class CarRentalServiceImpl implements CarRentalService {
 
                  TO-DO: Send a alert object rather than car object
                 */
-                myCarSqsSender.send(car);
-//                restTemplate.postForObject("http://localhost:8081/addNotification/HIGH_SPEED", car, Car.class);
+//                myCarSqsSender.send(car);
+                restTemplate.postForObject("http://localhost:8081/addNotification/HIGH_SPEED", car, CarReading.class);
             }
             if(car.getFuelVolume()<3){
                 myCarSqsSender.send(car);

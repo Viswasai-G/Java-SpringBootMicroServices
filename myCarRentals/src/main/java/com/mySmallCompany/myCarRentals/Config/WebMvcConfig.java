@@ -1,6 +1,7 @@
 package com.mySmallCompany.myCarRentals.Config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +12,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebMvcConfig {
+
+    @Value("${mycars.username}")
+    private String myCarsUsername;
+
+    @Value("${mycars.password}")
+    private String myCarsPassword;
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
@@ -31,7 +38,7 @@ public class WebMvcConfig {
     @Bean
     @Qualifier(value = "myCarsRestTemplate")
     public RestTemplate getMyCarsRestTemplate(){
-        return new RestTemplateBuilder().basicAuthentication("Admin","adminpass").build();
+        return new RestTemplateBuilder().basicAuthentication(this.myCarsUsername, this.myCarsPassword).build();
     }
 
 }
