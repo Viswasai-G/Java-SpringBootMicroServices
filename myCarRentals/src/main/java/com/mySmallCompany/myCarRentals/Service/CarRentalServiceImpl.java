@@ -9,6 +9,7 @@ import com.mySmallCompany.myCarRentals.Model.CarReading;
 import com.mySmallCompany.myCarRentals.Model.TireReading;
 import com.mySmallCompany.myCarRentals.Repo.CarRentalRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -28,6 +29,10 @@ public class CarRentalServiceImpl implements CarRentalService {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    @Qualifier("myCarsRestTemplate")
+    private RestTemplate myCarsRestTemplate;
 
     @Override
     public List<CarReading> getAllCars() {
@@ -52,7 +57,7 @@ public class CarRentalServiceImpl implements CarRentalService {
                 /**Lets say we only want to send an alert if the make of the model is not Honda
                  * TO-DO: Make call async
                  * Use CompletableFuture<CarMakeModel> and apply condition async*/
-                if(!restTemplate.getForEntity("http://localhost:8085/getCar/"+car.getVin(), CarMakeModel.class)
+                if(!myCarsRestTemplate.getForEntity("http://localhost:8085/getCar/"+car.getVin(), CarMakeModel.class)
                         .getBody()
                         .getVin().equalsIgnoreCase("honda")){
                     restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, CarReading.class);
