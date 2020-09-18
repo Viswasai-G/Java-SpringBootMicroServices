@@ -11,6 +11,7 @@
 
     <modules>
 <!--        <module>myIceAndFire</module>-->
+        <module>ConfigServer</module>
         <module>myCarRentals</module>
         <module>myRentals</module>
         <module>myRentalUsers</module>

@@ -60,11 +60,11 @@ public class CarRentalServiceImpl implements CarRentalService {
                  * TO-DO: Make call async
                  * Use CompletableFuture<CarMakeModel> and apply condition async*/
                 try {
-                    String make = myCarsRestTemplate.getForEntity("http://localhost:8085/getCar/"+car.getVin(), CarMakeModel.class)
+                    String make = myCarsRestTemplate.getForEntity("http://mycars/getCar/"+car.getVin(), CarMakeModel.class)
                             .getBody()
                             .getMake();
                     if(make.equalsIgnoreCase("honda")){
-                        restTemplate.postForObject("http://localhost:8081/addNotification/CHECK_ENGINE", car, CarReading.class);
+                        restTemplate.postForObject("http://mycarrentalalerts/addNotification/CHECK_ENGINE", car, CarReading.class);
                     }
                 }
                 catch (Exception e){
@@ -80,7 +80,7 @@ public class CarRentalServiceImpl implements CarRentalService {
                  TO-DO: Send a alert object rather than car object
                 */
 //                myCarSqsSender.send(car);
-                restTemplate.postForObject("http://localhost:8081/addNotification/HIGH_SPEED", car, CarReading.class);
+                restTemplate.postForObject("http://mycarrentalalerts/addNotification/HIGH_SPEED", car, CarReading.class);
             }
             if(car.getFuelVolume()<3){
                 myCarSqsSender.send(car);
