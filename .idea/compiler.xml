@@ -23,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="com.mySmallCompany.myCarRentalAlerts.main" target="11" />
       <module name="com.mySmallCompany.myCarRentalAlerts.test" target="11" />
+      <module name="ConfigServer" target="11" />
       <module name="myIceAndFire" target="11" />
       <module name="mySmall-microServiceApp.myCarRentalAlerts" target="11" />
       <module name="mySmall-microServiceApp.myCarRentalAlerts.main" target="11" />

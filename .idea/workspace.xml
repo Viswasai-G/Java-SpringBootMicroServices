@@ -4,18 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:AuthImpl" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3840b727-599f-47d4-926c-af6c7fcaf05c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/AWS/AwsRdsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Exception/MyCarsServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/CarRentalAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentalAlerts/src/main/java/com/mySmallCompany/myCarRentalAlerts/Model/CarRentalAlert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/CarMakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Model/CarMakeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Service/CarRentalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Controller/CarRentalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/java/com/mySmallCompany/myCarRentals/Controller/CarRentalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/myCarRentals/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +78,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="EurekaConfig" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -91,20 +108,20 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/myCars/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../okta" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myCarRentalAlerts" />
-      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\temp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices" />
       <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myCarRentalAlerts" />
+      <recent name="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\temp" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -113,6 +130,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.MyCarRentals">
+    <configuration name="ConfigServer" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.ConfigServer.ConfigServerApplication" />
+      <module name="ConfigServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyCarRentalAlerts" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="com.mySmallCompany.myCarRentalAlerts.MyCarRentalAlertsApplication" />
       <module name="myCarRentalAlerts.main" />
@@ -179,7 +203,9 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/myRentalUsers" />
       <option name="docBase" value="C:\Users\tejat\IdeaProjects\Java-SpringbootMicroServices\myRentalUsers\src\main\java\com\mySmallCompany\myRentalUsers" />
-      <option name="envOptions" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8082" />
       <option name="tomcatInfo">
@@ -199,11 +225,14 @@
       <item itemvalue="Application.MyRentals" />
       <item itemvalue="Application.MyCarRentalAlerts" />
       <item itemvalue="Application.MyCars" />
+      <item itemvalue="Application.ConfigServer" />
       <item itemvalue="Application.MyCarRentals" />
       <item itemvalue="Smart Tomcat.myRentalUsers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyCarRentals" />
+        <item itemvalue="Application.MyCarRentals" />
         <item itemvalue="Application.MyCarRentals" />
       </list>
     </recent_temporary>
@@ -266,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600242179737</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="BugFix: Inject credentials MyCars and dependencies">
+      <created>1600247486578</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600247486578</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Feature: Eureka service discovery for all services">
+      <created>1600389559810</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600389559810</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +317,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="AuthImpl" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -295,33 +355,35 @@
     <MESSAGE value="Update: Use separate IAM access cred for SQS and RDS and remove @sendTo" />
     <MESSAGE value="Refactor: Entity/Model names" />
     <MESSAGE value="Update: Use MyCarsService basic auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Use MyCarsService basic auth" />
+    <MESSAGE value="BugFix: Inject credentials MyCars and dependencies" />
+    <MESSAGE value="Feature: Eureka service discovery for all services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature: Eureka service discovery for all services" />
   </component>
   <component name="WindowStateProjectService">
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser" timestamp="1599722187967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="775" y="226" key="#BuildArtifactsBeforeRunChooser/0.0.1536.824@0.0.1536.824" timestamp="1599722187967" />
-    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600241573259">
+    <state x="300" y="144" width="1086" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600388531381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="338" y="190" width="1086" height="570" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600241573259" />
+    <state x="300" y="144" width="1086" height="666" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600388531381" />
     <state x="0" y="236" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599974622126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="236" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1599974622126" />
-    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1600247091522">
+    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser" timestamp="1600415493011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600247091522" />
+    <state x="575" y="120" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600415493011" />
     <state x="725" y="189" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599723550351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="725" y="189" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599723550351" />
-    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599781625322">
+    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600385014014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599781625322" />
+    <state x="724" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1600385014014" />
     <state x="492" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600240647266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -330,14 +392,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599990642454" />
-    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1600242177610">
+    <state x="348" y="0" key="CommitChangelistDialog2" timestamp="1600389556559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600242177610" />
-    <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1599781987702">
+    <state x="348" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600389556559" />
+    <state x="550" y="123" key="FileChooserDialogImpl" timestamp="1600418699954">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599781987702" />
+    <state x="550" y="123" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600418699954" />
     <state x="593" y="333" key="Github.CreateGistDialog" timestamp="1599728088808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -350,22 +412,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="111" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599730572592" />
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1600246744395">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1600483176195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600246744395" />
-    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1600246744394">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600483176195" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1600483176195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600246744394" />
-    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1600246744394">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600483176195" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1600483176194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600246744394" />
-    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1600246744395">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600483176194" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1600483176195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600246744395" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600483176195" />
     <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1600066222250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -382,22 +444,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600066222249" />
-    <state x="441" y="118" key="NewModule_or_Project.wizard" timestamp="1599777530206">
+    <state x="148" y="66" key="MergeDialog" timestamp="1600391306270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="441" y="118" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1599777530206" />
-    <state x="250" y="0" key="SettingsEditor" timestamp="1600242742975">
+    <state x="148" y="66" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1600391306270" />
+    <state x="441" y="63" key="NewModule_or_Project.wizard" timestamp="1600382920156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600242742975" />
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1600242183469">
+    <state x="441" y="63" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1600382920156" />
+    <state x="250" y="0" key="SettingsEditor" timestamp="1600384649321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600242183469" />
-    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600238051813">
+    <state x="250" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600384649321" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2" timestamp="1600389565422">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600238051813" />
+    <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600389565422" />
+    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600391253932">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="588" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600391253932" />
+    <state x="478" y="44" key="git4idea.branch.GitSmartOperationDialog" timestamp="1600391269307">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="44" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1600391269307" />
     <state x="203" y="47" key="new project wizard" timestamp="1599781970712">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
